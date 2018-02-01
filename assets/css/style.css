@@ -211,7 +211,7 @@ input[type=submit]:hover {
     text-decoration: none;
 }
 
-/* If the browser window is 980px or smaller, the background color will be green: */
+/* If the browser window is 980px or smaller */
 @media screen and (max-width: 980px) {
     
     #section {
@@ -237,7 +237,7 @@ input[type=submit]:hover {
     }
 }
 
-/* If the browser window is 768px or smaller, the background color will be green: */
+/* If the browser window is 768px or smaller */
 @media screen and (max-width: 768px) {
     #section {
         margin-top: 10px;
@@ -265,9 +265,28 @@ input[type=submit]:hover {
 
 /* If the browser window is 640px or smaller, the background color will be green: */
 @media screen and (max-width: 640px) {
-    /* The body's bg color will be #333 */
-    body {
-      background-color: green;
-      
+    #section {
+        width: 550px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #aside h1 {
+        font-size: 18px;
+    }
+
+    img {
+        border-style: none;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;    
+    }
+
+    #aside {
+        position: absolute;
+        top: 470px;
+        left: 200px;        
+        width: fit-content;
+        background-color: transparent;
     }
 }
