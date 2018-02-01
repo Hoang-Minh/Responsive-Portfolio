@@ -90,10 +90,7 @@ footer {
     clear: right;    
     background-color: #4aaaa5;
     margin-top: 100px;    
-    border-style: groove;
-    /* position: fixed;
-    bottom: 0;
-    width: 100%;     */
+    border-style: groove;    
 }
 
 #copyright {    
@@ -212,4 +209,65 @@ input[type=submit]:hover {
 
 .links-no-underline {
     text-decoration: none;
+}
+
+/* If the browser window is 980px or smaller, the background color will be green: */
+@media screen and (max-width: 980px) {
+    
+    #section {
+        margin-top: 10px;
+    }
+
+    #aside h1 {
+        font-size: 18px;
+    }
+
+    img {
+        border-style: none;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;    
+    }
+
+    #aside {
+        position: absolute;
+        top: 150px;
+        left: 660px;
+        width: fit-content;
+    }
+}
+
+/* If the browser window is 768px or smaller, the background color will be green: */
+@media screen and (max-width: 768px) {
+    #section {
+        margin-top: 10px;
+    }
+
+    #aside h1 {
+        font-size: 18px;
+    }
+
+    img {
+        border-style: none;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;    
+    }
+
+    #aside {
+        position: absolute;
+        top: 470px;
+        left: 200px;        
+        width: fit-content;
+        background-color: transparent;
+    }
+}
+
+/* If the browser window is 640px or smaller, the background color will be green: */
+@media screen and (max-width: 640px) {
+    /* The body's bg color will be #333 */
+    body {
+      background-color: green;
+      
+    }
 }
